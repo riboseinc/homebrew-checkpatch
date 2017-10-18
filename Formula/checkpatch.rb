@@ -12,7 +12,18 @@ class Checkpatch < Formula
   end
 
   def install
-    bin.install 'checkpatch.pl'
-    doc.install "spelling.txt"
+    share.install %w(
+      checkpatch.pl
+      spelling.txt
+    )
+    doc.install "LICENSE.GPLv2.md"
+
+    (share/"const_structs.checkpatch").write <<-EOS.undent
+      invalid.struct.name
+    EOS
+
+    bin.install %(git-checkpatch)
+    bin.install_symlink share/"checkpatch.pl" => "checkpatch.pl"
+
   end
 end

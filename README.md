@@ -1,4 +1,4 @@
-# Homebrew for checkpatch
+# Homebrew for `checkpatch`
 
 This tap contains formulae relating to [checkpatch](https://github.com/riboseinc/checkpatch).
 
@@ -17,6 +17,7 @@ Or:
 ``` sh
 brew install --HEAD riboseinc/checkpatch/checkpatch
 ```
+
 
 ## Install Tap
 
@@ -44,6 +45,7 @@ You can also install via URL:
 ``` sh
 brew install --HEAD https://raw.githubusercontent.com/riboseinc/homebrew-checkpatch/master/Formula/checkpatch.rb
 ```
+
 
 ## Acceptable Formulae
 
