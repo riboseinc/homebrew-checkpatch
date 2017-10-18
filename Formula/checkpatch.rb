@@ -1,7 +1,9 @@
 class Checkpatch < Formula
   desc "Homebrew formula for the Linux Kernel's `checkpatch.pl`"
   homepage "https://github.com/riboseinc/checkpatch"
-  head "https://github.com/riboseinc/checkpatch.git"
+  head "https://github.com/riboseinc/checkpatch"
+
+  depends_on "perl"
 
   # patch
   patch :p0 do
